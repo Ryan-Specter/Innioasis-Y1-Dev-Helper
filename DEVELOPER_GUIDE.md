@@ -4,6 +4,8 @@
 
 The Innioasis Y1 is a unique Android-based digital audio player with specific hardware constraints that require special consideration when developing apps. This guide will help you create apps that work seamlessly with the Y1's limited input system and display.
 
+The Y1 Dev Helper app is designed to make it easy to set up and test existing Android apps that rely on touchscreen input (which the Y1 lacks), allowing developers to port and optimize their app experiences for the Y1 and Android 4.2.2. It also provides tools for testing navigation and input mapping, so you can ensure your app is usable with only the Y1's physical controls.
+
 ## Hardware Specifications
 
 ### Display
@@ -66,4 +68,19 @@ Before starting development, use the Y1 Helper's "Prepare Device" feature to ins
 - **Android Version**: 4.2.2 Jelly Bean (API Level 16)
 - **Display**: 480x360 non-touch LCD
 - **Input**: D-pad navigation + media buttons
-- **Platform**: MediaTek MT6572 
+- **Platform**: MediaTek MT6572
+
+## Dynamic Control Profiles and Y1-Optimised Apps
+
+The Y1 Dev Helper app can detect when an app is Y1-optimised by checking if its package name contains `.y1` or `.y1app`. When such an app is detected, the "Enable Y1 Scrollwheel Behaviour" feature is automatically enabled in the remote control tool. This remaps the scrollwheel and navigation keys so that scrolling up and down with the remote correctly navigates through vertical list views, matching both native Android apps and Y1-optimised apps.
+
+This is especially useful for Y1-optimised apps that use the standard horizontal list view, following the convention where Left is Up and Right is Down. If your app uses horizontal navigation (e.g., a gallery or emulator), you can disable this feature in the Y1 Dev Helper app, or toggle it on/off using the Alt key, to allow direct left/right navigation.
+
+Additionally, using `.y1` or `.y1app` in your package name allows for future launcher apps to separate and list "native" Y1-optimised apps apart from other installed Android apps, making the user experience more seamless.
+
+## Future Ecosystem
+If Wi-Fi is enabled, consider building connected apps (e.g., Tidal, Soulseek, wireless sync tools) to expand the Y1's capabilities.
+
+---
+
+Keep your UI simple, accessible, and enjoyable for button-only navigation. The Y1 can be a pleasure to use with thoughtfully designed apps and the right development tools. 
