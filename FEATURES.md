@@ -3,10 +3,7 @@
 ## 🎯 Core Features Implemented
 
 ### ✅ Screen Capture & Display
-- **Real-time framebuffer capture** from `/dev/graphics/fb0`
-- **480x360px RGBA8888** display rendering
-- **10 FPS capture rate** with configurable settings
-- **Live screen mirroring** in application window (intended mainly to help you land touch input accurately via the remote control tool)
+- **Live screen mirroring** in application window (laggy and intended mainly to help you land touch input accurately via the remote control tool, while observing the device display)
 - **Note:** The preview on your PC is subject to delay and may run slowly, especially on screens that don't refresh a lot of pixels at once. For real-time feedback, always observe the device's own screen directly.
 - **Scrollable canvas** for larger displays
 
