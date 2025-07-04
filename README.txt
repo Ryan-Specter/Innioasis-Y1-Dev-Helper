@@ -1,3 +1,5 @@
+Download at https://github.com/Ryan-Specter/Innioasis-Y1-Dev-Helper/releases/tag/beta
+
 FEATURES:
 - Delayed screen capture from Y1 device (visual aid for touch input targeting)
 - Touch screen simulation for third-party apps
