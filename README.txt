@@ -14,7 +14,7 @@ USAGE:
 2. Enable USB debugging on the device
 3. Run "Y1 Helper.exe"
 4. (Optional) Use Device > Flash device and follow the on-screen instructions to install the ATA Firmware
-5. (Optional) Use Device > Prepare Device to install stock launcher for development
+5. Use Device > Prepare Device to install stock launcher for development
 6. Use the delayed screen capture to guide your mouse clicks and keyboard inputs
 
 INPUT MODES:
